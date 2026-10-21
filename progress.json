@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-21T08:25:01.604970+00:00",
-  "status": "Pages implemented; integrating and verifying local workflows",
+  "updated": "2026-10-21T10:56:21.872426+00:00",
+  "status": "Local checks passed; publishing final demo and assistant",
   "milestones": [
     {
       "title": "Audit all original pages and backend calls",
@@ -28,11 +28,11 @@
     },
     {
       "title": "Verify routes, persistence, and demo interactions",
-      "state": "working"
+      "state": "done"
     },
     {
       "title": "Publish and verify final GitHub Pages deployment",
-      "state": "pending"
+      "state": "working"
     }
   ]
 }
