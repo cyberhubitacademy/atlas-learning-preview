@@ -15,6 +15,10 @@
 Run `npm test` from the repository root. Tests use an isolated in-memory storage stub and do not change browser or production records.
 
 ## Scope
-53 route patterns (including the fallback) and 80 lesson identifiers are present in route-inventory.json. New public content and formerly empty lessons are demonstration content. Original available detailed lessons and UI assets are retained.
+54 route patterns (including the fallback) and 80 lesson identifiers are present in route-inventory.json. New public content and formerly empty lessons are demonstration content. Original available detailed lessons and UI assets are retained.
 
 The assistant is local retrieval/extraction and prepared lesson templates, not a connected generative AI model. Sample overview metrics, illustrative map, director overview copy, text video recaps, and teacher assessment question templates are identified as demo material. Browser-local accounts are role selections, not secure multi-user accounts. No production backend, email, payment, or AI credentials are required.
+
+## Dashboard click repair
+
+Converted decorative dashboard cards into keyboard-accessible links. Verified all 20 destinations in the browser: four course cards, four recommendations, four statistics, five activity entries, and three visible shortcuts. Course cards now open the selected subject, and recommendations open the actual lesson. Versioned the updated assets to prevent returning visitors from receiving the old cached JavaScript.
