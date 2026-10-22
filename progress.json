@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-22T05:34:45.565989+00:00",
-  "status": "Mobile checks passed; publishing GitHub Pages update",
+  "updated": "2026-10-22T05:35:39.779656+00:00",
+  "status": "Mobile fixes published and verified on GitHub Pages",
   "milestones": [
     {
       "title": "Audit all original pages and backend calls",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Fix mobile drawer and verify phone-sized interactions",
-      "state": "working"
+      "state": "done"
     }
   ],
   "results": {
@@ -49,6 +49,11 @@
     "assistant_modes": 5,
     "deployment": "Verified live on GitHub Pages",
     "storage": "Browser-local demo",
-    "dashboard_links_verified": 20
+    "dashboard_links_verified": 20,
+    "mobile_viewports_tested": [
+      "320x740",
+      "390x844"
+    ],
+    "mobile_live_verification": "Drawer close and lesson recap verified on published build"
   }
 }
