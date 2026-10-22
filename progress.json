@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-21T11:06:38.026015+00:00",
-  "status": "Complete \u2014 dashboard clicks repaired and verified on the live site",
+  "updated": "2026-10-22T05:34:45.565989+00:00",
+  "status": "Mobile checks passed; publishing GitHub Pages update",
   "milestones": [
     {
       "title": "Audit all original pages and backend calls",
@@ -37,6 +37,10 @@
     {
       "title": "Repair dashboard cards and verify click destinations",
       "state": "done"
+    },
+    {
+      "title": "Fix mobile drawer and verify phone-sized interactions",
+      "state": "working"
     }
   ],
   "results": {

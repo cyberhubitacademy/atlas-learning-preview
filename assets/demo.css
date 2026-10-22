@@ -3,3 +3,30 @@
 .gw-assistant-layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(230px,1fr);gap:24px}.gw-answer{white-space:pre-wrap;line-height:1.8}.gw-source{display:block;margin:6px 0;color:#9cddeb;font-size:12px}.gw-sources{margin:18px 0}.gw-option{display:flex;align-items:flex-start;gap:10px;padding:10px 0;font-size:14px}.gw-option input{margin-top:5px}.gw-quiz{border-top:1px solid #31445c;margin-top:20px}.gw-suggestion{width:100%;margin:7px 0;text-align:left;justify-content:flex-start}@media(max-width:900px){.gw-assistant-layout{grid-template-columns:1fr}}
 
 .gw-clickable{display:block;cursor:pointer;text-decoration:none;transition:border-color .2s,background .2s,transform .2s}.gw-clickable:hover{border-color:#35cbe4;background-color:#14273a;transform:translateY(-1px)}.gw-clickable:focus-visible{outline:2px solid #3ed7f0;outline-offset:4px}.gw-activity-link{display:flex;padding:8px;border-radius:10px}.gw-dashboard-shortcuts{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 24px}.gw-dashboard-shortcuts .gw-button{min-height:44px}
+
+/* Touch-safe navigation and narrow-screen layout. */
+button,a,[role="button"],[role="tab"],label,select{touch-action:manipulation}
+.gw-mobile-drawer>button{display:flex!important;align-items:center;justify-content:center;min-width:44px;min-height:44px;top:6px;right:6px;z-index:2;background:hsl(var(--sidebar-background))}
+.gw-mobile-drawer [data-sidebar="content"]{padding-top:6px}
+[data-sidebar="trigger"],.gw-mobile-menu-toggle{min-width:44px;min-height:44px}
+.gw-mobile-drawer [data-sidebar="menu-button"]{min-height:44px}
+@media(max-width:767px){
+ html,body,#root{max-width:100%;min-width:0}
+ .sidebar-wrapper,.flex-1,main,section,article{min-width:0}
+ main{overflow-wrap:anywhere}
+ button:not([role="radio"]):not([role="checkbox"]):not([role="switch"]),[role="tab"],.gw-button{min-height:44px}
+ input,textarea,select{font-size:16px!important}
+ [role="tablist"]{height:auto;min-height:48px}
+ .gw-page{padding:20px 16px}
+ .gw-header{height:auto;min-height:64px;flex-wrap:wrap;padding:10px 12px;gap:8px}
+ .gw-card{padding:18px 14px}
+ .gw-toolbar>*{max-width:100%}
+ .gw-chat{max-height:none;overflow:visible}
+ .gw-option{min-height:44px}
+ .gw-sources,.gw-answer{overflow-wrap:anywhere}
+ .gw-public-header nav{flex-wrap:wrap}
+ .gw-public-header .gw-brand{font-size:21px}
+ .gw-public-header{padding:18px 16px}
+ .gw-table-wrap{overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+ .gw-dashboard-shortcuts{display:grid;grid-template-columns:1fr}
+}

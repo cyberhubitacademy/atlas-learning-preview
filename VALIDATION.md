@@ -22,3 +22,8 @@ The assistant is local retrieval/extraction and prepared lesson templates, not a
 ## Dashboard click repair
 
 Converted decorative dashboard cards into keyboard-accessible links. Verified all 20 destinations in the browser: four course cards, four recommendations, four statistics, five activity entries, and three visible shortcuts. Course cards now open the selected subject, and recommendations open the actual lesson. Versioned the updated assets to prevent returning visitors from receiving the old cached JavaScript.
+
+
+## Mobile repair — 22 October 2026
+
+Verified in browser viewports of 390 × 844 and 320 × 740: drawer same-page dismissal, explicit Close, navigation to courses/assistant/settings, lesson Read/Recap/Quiz, five answer selections and 100% quiz submission, Retake, assistant Mind map submission, settings Save, subject selection, and independent homepage Director/Iam menus. Settings and courses fit 320px; assistant fits 390px without document horizontal overflow. Enlarged touch targets and form text, removed recap clipping, and added an accessible drawer title. Syntax, local service persistence and assistant tests pass. These are browser viewport checks, not tests on physical Android/iOS hardware.
